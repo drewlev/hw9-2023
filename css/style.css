@@ -1,0 +1,79 @@
+body {
+    background-color: rgb(196, 196, 196);
+}
+
+.resume {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px 30px;
+}
+
+.job {
+    display: grid;
+    grid-template-columns: 10% 1fr;
+    grid-template-rows: 1fr 10% 90%;
+}
+
+.job img {
+    grid-area: 3/1/4/2;
+    max-width: 100%;
+
+}
+.job p:first-child {
+    grid-area: 1/1/2/2;
+    background-color: aqua;
+    
+}
+.job p:last-child {
+    grid-area: 1/2/4/3;
+    background-color: red;
+}
+
+.skip a{
+    position: absolute;
+    top: -40px;
+     
+}
+
+.skip a:focus {
+    top: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+  
+nav li {
+flex-direction: column-reverse;
+}
+
+nav li a {
+display: block;
+color: white;
+text-align: center;
+padding: 14px 16px;
+
+}
+
+/* Change the link color to #111 (black) on hover */
+nav li a:hover {
+background-color: #111;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr) ;
+}
+
+.skills-grid img {
+    max-width: 100%; /* make sure the images don't exceed their container */
+    height: auto; /* maintain the aspect ratio of the images */
+    margin: 0 10px; /* add some horizontal spacing between the images */
+}
+
